@@ -218,6 +218,10 @@ primary:
     slow_query_log=0
     long_query_time=10.0
 
+    ## Binary Logging
+    ##
+    binlog_expire_logs_seconds=2592000
+
     [client]
     port=3306
     socket=/opt/bitnami/mariadb/tmp/mysql.sock
@@ -635,6 +639,10 @@ secondary:
     collation-server=utf8_general_ci
     slow_query_log=0
     long_query_time=10.0
+
+    ## Binary Logging
+    ##
+    binlog_expire_logs_seconds=2592000
 
     [client]
     port=3306
